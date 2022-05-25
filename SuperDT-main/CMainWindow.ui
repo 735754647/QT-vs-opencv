@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CMainWindow</class>
+ <widget class="QMainWindow" name="CMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>SuperDT</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{	
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="VWindowSplitter" name="vwindowsplitter" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_settings">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_preference"/>
+    <addaction name="action_skin"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_wave"/>
+    <addaction name="action_ascii"/>
+    <addaction name="separator"/>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu_settings"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_preference">
+   <property name="text">
+    <string>首选项</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_ver">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/UI/hor_n.png</normaloff>
+     <normalon>:/UI/hor_c.png</normalon>:/UI/hor_n.png</iconset>
+   </property>
+   <property name="text">
+    <string>水平分屏</string>
+   </property>
+   <property name="toolTip">
+    <string>水平分屏</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_hor">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/UI/ver_n.png</normaloff>
+     <normalon>:/UI/ver_c.png</normalon>:/UI/ver_n.png</iconset>
+   </property>
+   <property name="text">
+    <string>垂直分屏</string>
+   </property>
+   <property name="toolTip">
+    <string>垂直分屏</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/UI/close_n.png</normaloff>
+     <normalon>:/UI/close_c.png</normalon>
+     <activeon>:/UI/close_c.png</activeon>:/UI/close_n.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭窗口</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭窗口</string>
+   </property>
+  </action>
+  <action name="action_wave">
+   <property name="text">
+    <string>波形协议</string>
+   </property>
+  </action>
+  <action name="action_ascii">
+   <property name="text">
+    <string>ASCII对照表</string>
+   </property>
+  </action>
+  <action name="action_wx">
+   <property name="text">
+    <string>微信</string>
+   </property>
+  </action>
+  <action name="action_list">
+   <property name="text">
+    <string>贡献榜</string>
+   </property>
+  </action>
+  <action name="action_zfb">
+   <property name="text">
+    <string>支付宝</string>
+   </property>
+  </action>
+  <action name="action_skin">
+   <property name="text">
+    <string>皮肤</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>VWindowSplitter</class>
+   <extends>QWidget</extends>
+   <header>vwindowsplitter.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

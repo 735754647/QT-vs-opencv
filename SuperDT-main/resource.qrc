@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>AppIcon.png</file>
+        <file>Trans/english.qm</file>
+        <file>Font/iconfont.ttf</file>
+        <file>UI/check_box_c.png</file>
+        <file>UI/check_box_n.png</file>
+        <file>UI/down.png</file>
+        <file>UI/down_fill.png</file>
+        <file>UI/radio_c.png</file>
+        <file>UI/radio_n.png</file>
+        <file>UI/up.png</file>
+        <file>UI/up_fill.png</file>
+        <file>Resource/Skin/simpleStyle.qss</file>
+        <file>Resource/Skin/defaultStyle.qss</file>
+    </qresource>
+    <qresource prefix="/qss"/>
+</RCC>

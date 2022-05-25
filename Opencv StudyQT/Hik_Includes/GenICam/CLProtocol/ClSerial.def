@@ -1,0 +1,13 @@
+EXPORTS
+  clFlushPort
+  clGetErrorText
+  clGetManufacturerInfo
+  clGetNumBytesAvail
+  clGetNumSerialPorts
+  clGetSerialPortIdentifier
+  clGetSupportedBaudRates
+  clSerialClose
+  clSerialInit
+  clSerialRead
+  clSerialWrite
+  clSetBaudRate

@@ -1,0 +1,11 @@
+EXPORTS
+  clpGetShortDeviceIDTemplates
+  clpProbeDevice
+  clpGetXMLIDs
+  clpGetXMLDescription
+  clpReadRegister
+  clpWriteRegister
+  clpContinueWriteRegister
+  clpGetErrorText
+  clpDisconnect
+  clpGetCLProtocolVersion

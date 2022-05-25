@@ -1,0 +1,295 @@
+/*主题亮: #cbebff*/
+/*主题色：#1aa3ff*/
+/*主题暗：#007acc*/
+/*默认边框色： #bbbbbb*/
+/*控件背景色:  #f2f2f2*/
+/*控件按下色： #e6e6e6*/
+
+QPushButton,QComboBox,QTextEdit{
+	border-radius:3px;
+}
+
+QPushButton{
+	padding:5px 10px 5px 10px;
+	background:#f2f2f2;
+}
+QPushButton:hover{
+	background:#cbebff;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background:#1aa3ff;
+}
+
+QPushButton:checked{
+	color:#ffffff;
+    background:#1aa3ff;
+}
+
+QPushButton[iconText=true] {
+	padding:2px;
+	color:#000000;
+    font: 24px "iconfont";
+	border:none;
+	background:transparent;
+}
+QPushButton::hover[iconText=true] {
+    font:22px "iconfont";
+	border-radius:5px;
+	background:#cbebff;
+}
+QPushButton::checked[iconText=true]{
+	color:#1aa3ff;
+	font:24px "iconfont";
+	border-radius:5px;
+}
+QPushButton::pressed[iconText=true] {
+    font:22px "iconfont";
+	background:transparent;
+}
+
+QSpinBox,QTextEdit{
+	selection-color:#1aa3ff;
+	selection-background-color:#cbebff;
+}
+
+QComboBox,QLineEdit,QListView{
+	padding:3px;
+	border-radius:3px;
+    border:1px solid #bbbbbb;
+    outline:none;
+    background-color: #ffffff;
+    selection-color: #1aa3ff;
+    selection-background-color: #cbebff;
+}
+QComboBox:hover,QLineEdit:hover{
+	border:1px solid #1aa3ff;
+}
+QComboBox::drop-down:editable{
+    border-left:1px solid #bbbbbb;
+	background:#f2f2f2;
+}
+QComboBox::drop-down{
+    border:none;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+QComboBox::down-arrow{
+	margin:3px;
+	height:8px;
+	border-image:url(:UI/down.png);
+}
+QComboBox QAbstractItemView{
+	background:#f2f2f2;
+    border-radius:3px;
+	border:none;
+    outline: 0px;
+    color:#000000; 
+}
+QComboBox QAbstractItemView::item{
+	background:#ffffff;
+    color:#000000; 
+}
+QTextEdit{
+	border:1px solid #bbbbbb;
+}
+QTextEdit:focus{
+	border:1px solid #1aa3ff;
+}
+
+QToolTip {
+    border: 1px solid #bbbbbb;
+    border-radius: 0px;
+    background-color:#ffffff;
+}
+
+QSpinBox{
+	border:1px solid #bbbbbb;
+	border-radius:3px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+QSpinBox:hover{
+	border:1px solid #1aa3ff;
+}
+QSpinBox::up-arrow{
+	padding-right:5px;
+	width:8px;
+	height:10px;
+	border-image:url(:/UI/up.png);
+}
+QSpinBox::down-arrow{
+	padding-right:5px;
+	width:8px;
+	height:10px;
+	border-image:url(:/UI/down.png);
+}
+QSpinBox::up-button,QSpinBox::down-button{
+	border-radius:3px;
+	border:none;
+	background:transparent;
+}
+QSpinBox::up-button:hover,QSpinBox::down-button:hover{
+	background:#cbebff;
+}
+QSpinBox::up-button:pressed,QSpinBox::down-button:pressed
+{
+	background:#1aa3ff;
+}
+
+QMenu {
+	color:#000000;
+	background-color:#ffffff; 
+	border-radius:3px;
+	padding:5px;
+	margin:6px;
+}
+QMenu::icon:checked {
+	position:absolute;
+	left:10px;
+}
+QMenu::item {
+        margin:3px;
+}
+QMenu::item:text { 
+        padding-left:10px;
+	padding-right:10px;
+}
+QMenu::item:selected{ 
+	color:#1aa3ff;
+	background-color: #cbebff;
+	border-radius:3px;
+}
+QMenu::separator{
+	height:1px;
+	background:#bbbbbb;
+	margin:5px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+QScrollBar:vertical
+{
+  width: 4px;
+  border:0px solid;
+  border-radius: 2px;
+  margin: 0px,0px,0px,0px;
+  background-color: transparent;
+  background:#f2f2f2;
+}
+QScrollBar::handle:vertical
+{
+  width:4px;
+  background:#bbbbbb;
+  border-radius: 2px;
+  height: 40px; 
+  min-height:10px;
+}
+QScrollBar::handle:vertical:hover
+{
+  background:#1aa3ff;
+  border-radius: 2px;
+}
+QScrollBar::add-line:vertical
+{
+  height:11px;
+  background-color: transparent;
+  subcontrol-position:bottom;
+  border:0px solid;
+  border-radius: 2px;
+ 
+}
+QScrollBar::sub-line:vertical
+{
+  height:11px;
+  background-color: transparent;
+  subcontrol-position:top;
+  border:0px solid;
+  border-radius: 2px;
+}
+QScrollBar::add-page:vertical
+{
+  background-color: #f2f2f2;
+  border:0px solid;
+  border-radius: 2px;
+}
+QScrollBar::sub-page:vertical
+{
+  background-color: #f2f2f2;
+  border:0px solid;
+  border-radius: 2px;
+}
+
+QTabWidget::pane { 
+	border:1px solid #bbbbbb;
+}
+QTabBar::tab {
+	padding:5px;
+	border-bottom:2px solid #bfbfbf;
+}
+QTabBar::tab:selected {
+	padding:5px;
+	border-bottom:2px solid #1aa3ff;
+}
+
+QDialog{
+	background:#ffffff;
+}
+QTextBrowser{
+	border:none;
+	background:transparent;
+}
+
+#frame_send_menu{
+	border: 1px solid #bbbbbb;
+	border-bottom:none;
+}
+#frame_session[selected=true]{
+	border:2px solid #1aa3ff;
+	border-radius:5px;
+	background:#ffffff;
+}
+#frame_session[selected=false]{
+	border:2px solid #bbbbbb;
+	border-radius:5px;
+	background:#ffffff;
+}
+#pushButton_start{
+	border-radius:30px;
+	background:#60000000;
+	padding:5px;
+	font-size:30px;
+	color:#ffffff;
+}
+#pushButton_start:hover{
+	background:#70000000;
+}
+
+#pushButton_connect{
+	width:48px;
+}
+#pushButton_send{
+	color:#ffffff;
+	width:48px;
+	background:#1aa3ff;
+}
+#pushButton_send::pressed{
+	background:#007acc;
+}
+#pushButton_send:disabled {
+	background:#e6e6e6;
+}
+
+#tabWidget_send::pane{
+	border-top:none;
+}
+#scrollAreaWidgetContents_trig,#scrollAreaWidgetContents,#scrollArea_trig,#scrollArea_quick{
+	background:#ffffff;
+	border:none;
+}
+#textEdit_send,#textEdit_receive,#textEdit_quick_batch{
+	border:none;
+	background-color:#ffffff;
+}
+
